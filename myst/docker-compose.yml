@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+
+  myst-node1:
+    image: mysteriumnetwork/mysterium-node
+    command: ["--agreed-terms-and-conditions"]
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    ports:
+      - "1194:1194/udp"

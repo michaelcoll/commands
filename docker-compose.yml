@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  dockerNAS1:
+    image: honeygain/honeygain
+    command: ["-tou-accept", "-email", "", "-pass", "", "-device", "dockerNAS1"]
+
+  dockerNAS2:
+    image: honeygain/honeygain
+    command: ["-tou-accept", "-email", "", "-pass", "", "-device", "dockerNAS2"]

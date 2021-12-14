@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+
+  earn-app1:
+    image: fazalfarhan01/earnapp
+    privileged: true
+    volumes:
+       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+       - .earnapp1/etc:/etc/earnapp

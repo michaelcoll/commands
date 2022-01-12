@@ -1,9 +1,20 @@
-version: "3.9"
+version: "3.3"
 services:
-
-  earn-app1:
-    image: fazalfarhan01/earnapp
-    privileged: true
-    volumes:
-       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-       - .earnapp1/etc:/etc/earnapp
+    app1:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc1:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-336afa9d0c19c4408e2bcde2486007de
+    app2:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc2:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-4438dfc808c3a9469f76b542f73f8d48
+    app3:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc3:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-e836d429f31dc44db9a12d5ab6e32690

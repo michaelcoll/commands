@@ -18,3 +18,27 @@ services:
             - ./etc3:/etc/earnapp
         environment:
             EARNAPP_UUID: sdk-node-e836d429f31dc44db9a12d5ab6e32690
+    app4:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc4:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-5538dfc808c3a9469f76b542f73f8d42
+    app5:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc5:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-6638dfc808c3a9469f76b542f73f8d42
+    app6:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc6:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-7738dfc808c3a9469f76b542f73f8d42
+    app7:
+        image: fazalfarhan01/earnapp:lite
+        volumes:
+            - ./etc7:/etc/earnapp
+        environment:
+            EARNAPP_UUID: sdk-node-8838dfc808c3a9469f76b542f73f8d42
